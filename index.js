@@ -1,6 +1,6 @@
 // This is required for the test to function properly
 
-Module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
+module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
 
 // function1 
  function calculateTax(amount) {
@@ -14,7 +14,7 @@ Module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, 
 
 //function3
 function isPalindrome(word) {
-   return word === word.split('').reverse().join('');
+   return word.toLowerCase() === word.toLowerCase().split('').reverse().join('');
 }
 
 //function 4
